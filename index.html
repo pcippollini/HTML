@@ -1,3 +1,9 @@
+# Dashboard Overlay para uMap — FIPE 2026
+
+Substitua TODO o conteúdo atual do seu `index.html` por este código.
+
+```html
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,6 +27,10 @@ iframe{
     height:100%;
     border:none;
 }
+
+/* =========================
+LOGO SUPERIOR
+========================= */
 
 .logo{
 
@@ -70,11 +80,102 @@ iframe{
 
 }
 
+/* =========================
+DASHBOARD LATERAL
+========================= */
+
+.dashboard{
+
+    position:fixed;
+
+    top:70px;
+    left:15px;
+
+    width:230px;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    z-index:9999;
+
+}
+
+.card{
+
+    background:rgba(20,20,20,0.55);
+
+    backdrop-filter:blur(6px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:12px;
+
+    padding:14px;
+
+    color:white;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.25);
+
+}
+
+.card-title{
+
+    font-size:11px;
+    opacity:0.7;
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+}
+
+.card-value{
+
+    margin-top:6px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    line-height:1;
+
+}
+
+.card-sub{
+
+    margin-top:6px;
+
+    font-size:11px;
+
+    opacity:0.75;
+
+}
+
+.green{
+    border-left:4px solid #22c55e;
+}
+
+.orange{
+    border-left:4px solid #f59e0b;
+}
+
+.red{
+    border-left:4px solid #ef4444;
+}
+
+.blue{
+    border-left:4px solid #3b82f6;
+}
+
+.gray{
+    border-left:4px solid #9ca3af;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- LOGO -->
 <div class="logo">
 
     <div class="logo-title">
@@ -87,7 +188,45 @@ iframe{
 
 </div>
 
+<!-- DASHBOARD -->
+<div class="dashboard">
+
+    <div class="card green">
+        <div class="card-title">EMPRESAS FINALIZADAS</div>
+        <div class="card-value">000</div>
+        <div class="card-sub">Atualizar manualmente</div>
+    </div>
+
+    <div class="card orange">
+        <div class="card-title">ETAPA 1</div>
+        <div class="card-value">000</div>
+        <div class="card-sub">Atualizar manualmente</div>
+    </div>
+
+    <div class="card red">
+        <div class="card-title">ETAPA 2</div>
+        <div class="card-value">000</div>
+        <div class="card-sub">Atualizar manualmente</div>
+    </div>
+
+    <div class="card blue">
+        <div class="card-title">CARTEIRA</div>
+        <div class="card-value">000</div>
+        <div class="card-sub">Atualizar manualmente</div>
+    </div>
+
+    <div class="card gray">
+        <div class="card-title">TOTAL GERAL</div>
+        <div class="card-value">000</div>
+        <div class="card-sub">Atualizar manualmente</div>
+    </div>
+
+</div>
+
+<!-- MAPA -->
 <iframe src="https://umap.openstreetmap.fr/pt-br/map/teste_1401917"></iframe>
 
 </body>
 </html>
+
+
