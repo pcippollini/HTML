@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>FIPE 2026</title>
+
+<style>
+
+html, body{
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    background:#111;
+}
+
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+.logo{
+
+    position:fixed;
+
+    top:8px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:rgba(20,20,20,0.55);
+
+    backdrop-filter:blur(6px);
+
+    color:white;
+
+    padding:6px 18px;
+
+    border-radius:8px;
+
+    z-index:9999;
+
+    text-align:center;
+
+    letter-spacing:1px;
+
+    border:1px solid rgba(255,255,255,0.10);
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.30);
+
+}
+
+.logo-title{
+
+    font-size:15px;
+    font-weight:700;
+    line-height:1.2;
+
+}
+
+.logo-sub{
+
+    font-size:9px;
+    margin-top:2px;
+    opacity:0.75;
+    line-height:1.2;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+
+    <div class="logo-title">
+        FIPE 2026
+    </div>
+
+    <div class="logo-sub">
+        AGENTE JOÃO
+    </div>
+
+</div>
+
+<iframe src="https://umap.openstreetmap.fr/pt-br/map/teste_1401917"></iframe>
+
+</body>
+</html>
